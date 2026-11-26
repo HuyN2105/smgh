@@ -4,3 +4,103 @@
     --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
     --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
 }
+
+:root,
+[data-theme="light"] {
+    color-scheme: light;
+    --bg-app: #f3f6f4;
+    --bg-surface: #ffffff;
+    --bg-subtle: #f8faf9;
+    --bg-hover: #eef3f0;
+    --border-main: #dce4df;
+    --text-primary: #12372a;
+    --text-secondary: #52665e;
+    --accent: #12372a;
+    --accent-hover: #1b4d3b;
+    --accent-contrast: #ffffff;
+    --alert: #c86428;
+}
+
+html.dark,
+[data-theme="dark"] {
+    color-scheme: dark;
+    --bg-app: #07131f;
+    --bg-surface: #0d1e2e;
+    --bg-subtle: #13283c;
+    --bg-hover: #18324a;
+    --border-main: #1e3a52;
+    --text-primary: #e6f1f8;
+    --text-secondary: #8ba6bc;
+    --accent: #38bdf8;
+    --accent-hover: #7dd3fc;
+    --accent-contrast: #07131f;
+    --alert: #f97316;
+}
+
+.app-bg {
+    background-color: var(--bg-app);
+    color: var(--text-primary);
+}
+.surface-bg {
+    background-color: var(--bg-surface);
+}
+.subtle-bg {
+    background-color: var(--bg-subtle);
+}
+.hover-row:hover {
+    background-color: var(--bg-hover);
+}
+.theme-border {
+    border-color: var(--border-main);
+}
+.text-main {
+    color: var(--text-primary);
+}
+.text-muted {
+    color: var(--text-secondary);
+}
+.text-accent {
+    color: var(--accent);
+}
+.bg-accent {
+    background-color: var(--accent);
+    color: var(--accent-contrast);
+}
+.bg-accent:hover {
+    background-color: var(--accent-hover);
+}
+.card-active {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px var(--accent);
+}
+.text-alert {
+    color: var(--alert);
+}
+
+body,
+header,
+section,
+div,
+button,
+input,
+select,
+table,
+tr,
+th,
+td,
+svg,
+line,
+path,
+circle,
+text {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    scroll-behavior: smooth;
+}
