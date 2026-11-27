@@ -88,7 +88,7 @@ const METRIC_DEFINITIONS: MetricConfig[] = [
 ];
 
 export default function GreenhouseAdminDashboard() {
-    const [devices, setDevices] = useState<string[]>(["plant_node_01", "plant_node_02"]);
+    const [devices, setDevices] = useState<string[]>(["plant_node_01", "plant_node_02", "esp8266"]);
     const [selectedDevice, setSelectedDevice] = useState<string>("plant_node_01");
     const [activeMetricKey, setActiveMetricKey] = useState<string>("temperature");
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
