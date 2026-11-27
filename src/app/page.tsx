@@ -179,13 +179,13 @@ export default function GreenhouseAdminDashboard() {
                             {isDark ? <Sun className="w-4 h-4 text-accent" /> : <Moon className="w-4 h-4" />}
                         </button>
 
-                        <button
-                            onClick={() => setIsModalOpen(true)}
-                            className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-medium bg-accent rounded-md"
-                        >
-                            <Plus className="w-4 h-4" />
-                            <span className="hidden sm:inline">Đăng ký thiết bị</span>
-                        </button>
+                        {/*<button*/}
+                        {/*    onClick={() => setIsModalOpen(true)}*/}
+                        {/*    className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-medium bg-accent rounded-md"*/}
+                        {/*>*/}
+                        {/*    <Plus className="w-4 h-4" />*/}
+                        {/*    <span className="hidden sm:inline">Đăng ký thiết bị</span>*/}
+                        {/*</button>*/}
                     </div>
                 </div>
             </header>
